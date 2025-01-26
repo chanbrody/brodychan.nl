@@ -3,47 +3,157 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My GitHub Pages Site</title>
+  <title>Brody Chan Portfolio</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #f8f9fa;
+      color: #333;
+      padding: 15px 0;
       text-align: center;
-      padding: 50px;
-      background-color: #f4f4f9;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+    header p {
+      margin: 5px 0 0;
+      font-size: 1rem;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #007bff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      font-size: 0.9rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #0056b3;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+    .section {
+      margin: 40px 0;
+      padding: 20px;
+      background: #f8f9fa;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+    .section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #007bff;
+    }
+    .section h3 {
+      font-size: 1.3rem;
+      margin-top: 15px;
       color: #333;
     }
-    h1 {
-      color: #2c3e50;
+    .section p {
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+      color: #555;
     }
-    a {
-      color: #3498db;
-      text-decoration: none;
+    footer {
+      background: #f8f9fa;
+      color: #666;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 0.8rem;
     }
-    a:hover {
-      text-decoration: underline;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 6px;
+      padding: 15px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+    }
+    .card h3 {
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+    .card p {
+      color: #555;
+      font-size: 0.85rem;
     }
   </style>
 </head>
 <body>
+  <header>
     <h1>Brody Chan</h1>
-        <p>This is a placeholder page for my website. Stay tuned for updates!</p>
-        <p>Check out my <a href="https://github.com/your-username" target="_blank">GitHub profile</a></p>
-    <h2>About</h2>
-        <p>Hello, I'm Brody Chan! I am an engineer and composer.
-            Welcome to my website, a place where I share my projects and passions.  
-            I believe knowledge is most valuable when shared, which is why I write about topics ranging from engineering to music composition.
-            These subjects reflect my curiosity and desire to explore how creativity and logic intersect.  
-            Engineering allows me to solve real-world problems, while music composition gives me the freedom to express emotion and tell stories.
-            By sharing my thoughts and experiences, I hope to spark curiosity, inspire creativity, and connect with like-minded individuals.</p>
-    <h2>Music</h2>
-        <h3>Compositions</h3>
-            <h4>Broeder Jacob Bach</h4>
-        <h3>Music Theory</h3>
-            <h4>Four-Part Harmony</h4>
-                <p>.</p>
-    <h2>Engineering Projects</h2>
-        <p>Arduino</p>
-    <h2>Travels</h2>
-        <p>Taiwan</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#music">Music</a>
+      <a href="#projects">Projects</a>
+      <a href="#travels">Travels</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>Hello, I'm Brody Chan! I am an engineer and composer passionate about blending logic and creativity. Here is where I showcase my projects, share my compositions.</p>
+    </section>
+
+    <section id="music" class="section">
+      <h2>Music</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Compositions</h3>
+          <p>Broeder Jacob Bach</p>
+        </div>
+        <div class="card">
+          <h3>Music Theory</h3>
+          <p>Four-Part Harmony</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Engineering Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Arduino</h3>
+          <p>Interactive systems and prototypes built using Arduino.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="travels" class="section">
+      <h2>Travels</h2>
+      <p>One of my favorite destinations is Taiwan, where I explored culture, technology, and amazing landscapes.</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Brody Chan. All rights reserved. | <a href="https://github.com/your-username" target="_blank">Visit My GitHub</a></p>
+  </footer>
 </body>
 </html>
