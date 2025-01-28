@@ -6,8 +6,11 @@ body {
     color: #333;
     line-height: 1.6;
     scroll-behavior: smooth;
-  }
-  header {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
     background: #f8f9fa;
     color: #333;
     padding: 15px 0;
@@ -16,83 +19,86 @@ body {
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  header h1 {
+}
+header h1 {
     font-size: 2rem;
     margin: 0;
-  }
-  header p {
+}
+header p {
     margin: 5px 0 0;
     font-size: 1rem;
-  }
-  nav {
+}
+nav {
     margin-top: 10px;
-  }
-  nav a {
+}
+nav a {
     color: #007bff;
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold;
     font-size: 0.9rem;
     transition: color 0.3s ease;
-  }
-  nav a:hover {
+}
+nav a:hover {
     color: #0056b3;
-  }
-  .container {
+}
+.container {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-  }
-  .section {
+    flex: 1;
+}
+.section {
     margin: 40px 0;
     padding: 20px;
     background: #f8f9fa;
     border-radius: 6px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  }
-  .section h2 {
+}
+.section h2 {
     font-size: 1.8rem;
     margin-bottom: 15px;
     color: #007bff;
-  }
-  .section h3 {
+}
+.section h3 {
     font-size: 1.3rem;
     margin-top: 15px;
     color: #333;
-  }
-  .section p {
+}
+.section p {
     font-size: 0.9rem;
     margin-bottom: 15px;
     color: #555;
-  }
-  footer {
+}
+footer {
     background: #f8f9fa;
     color: #666;
     text-align: center;
     padding: 15px 0;
     font-size: 0.8rem;
-  }
-  .grid {
+    border-top: 1px solid #e1e1e1;
+    margin-top: auto;
+}
+.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
-  }
-  .card {
+}
+.card {
     background: #ffffff;
     border-radius: 6px;
     padding: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease;
-  }
-  .card:hover {
+}
+.card:hover {
     transform: translateY(-3px);
-  }
-  .card h3 {
+}
+.card h3 {
     color: #007bff;
     margin-bottom: 10px;
-  }
-  .card p {
+}
+.card p {
     color: #555;
     font-size: 0.85rem;
-  }
+}
