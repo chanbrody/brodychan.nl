@@ -84,7 +84,7 @@ footer {
   color: #666;
   text-align: center;
   font-size: 1rem;
-
+  padding: 30px 0; /* Increased padding for spacing */
   margin-top: auto; /* Ensures footer stays at the bottom */
   flex-shrink: 0; /* Prevent footer from shrinking */
 }
@@ -143,13 +143,20 @@ footer {
   }
 }
 
+/* Adjusted ClustrMaps globe scaling and placement */
 .clustrmaps-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 6px 0;
-  transform: scale(0.066); /* Adjust this scale factor as needed */
+  transform: scale(0.066); /* Further reduced scale factor */
   transform-origin: top center;
-  height: 33px; /* Adjust height based on scale */
+  height: 120px; /* Adjust height based on scale */
   margin-top: auto; /* Push the globe to the bottom */
+  max-width: 100%; /* Ensure it doesn't stretch beyond the screen */
+}
+
+.clustrmaps-wrapper canvas {
+  width: 100px !important; /* Adjust width to fit properly */
+  height: auto !important;
 }
