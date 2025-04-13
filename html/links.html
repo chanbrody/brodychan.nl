@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Links - Brody Chan</title>
-  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/contact.css" />
 </head>
 <body>
   <header>
@@ -17,26 +18,27 @@
     </nav>
   </header>
 
-  <div class="container">
+  <main class="container">
     <section class="section">
       <h2>Links</h2>
       <div class="grid">
         <div class="card">
-          <h3>LinkedIn</h3>
-          <p>linkedin.com/in/brody-chan</p>
-
-          <h3>GitHub</h3>
-          <p>github.com/chanbrody</p>
-
-          <h3>E-mail</h3>
-          <p>chanbrody@outlook.com</p>
-
-          <h3>SoundCloud</h3>
-          <p>soundcloud.com/brody-chan-927562810</p>
+          <!-- Add your link cards here -->
         </div>
       </div>
+
+      <div class="contact-form">
+        <h3>Contact</h3>
+        <!-- Replace with your Formspree endpoint -->
+        <form action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
     </section>
-  </div>
+  </main>
 
   <footer>
     <p>© 2025 Brody Chan | Last updated: April 2025</p>
