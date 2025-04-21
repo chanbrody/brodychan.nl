@@ -53,7 +53,7 @@ nav a:hover {
 }
 
 .section {
-  margin: 40px 0;
+  margin: 0px 0;
   padding: 20px;
   background: #f8f9fa;
   border-radius: 6px;
@@ -207,4 +207,50 @@ footer {
 .clustrmaps-wrapper canvas {
   width: 100px !important; /* Adjust width to fit properly */
   height: auto !important;
+}
+
+.about-content {
+  display: flex;
+  align-items: center; /* Vertically centers the content */
+  justify-content: center; /* Horizontally centers the content */
+  flex-direction: row-reverse;
+  gap: 30px; /* Adds space between the image and text */
+}
+
+.profile-photo {
+  width: 180px;
+  height: auto;
+}
+
+.about-content ul {
+  font-size: 1.0rem; /* Reduces the font size */
+  line-height: 1.8; /* Keeps the line height comfortable */
+}
+
+.about-content li {
+  margin-bottom: 10px; /* Adds space between the bullet points */
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 0.05em 0;
+  margin-top: 3rem;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  height: min-content;
+}
+
+.socials a {
+  color: #00bfff;
+  text-decoration: none;
+  margin: 0 0.1rem;
+}
+
+.socials a:hover {
+  text-decoration: underline;
 }
